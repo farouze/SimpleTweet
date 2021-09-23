@@ -1,5 +1,6 @@
 package com.codepath.apps.restclienttemplate;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -45,7 +46,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 	@Override
 	public void onLoginSuccess() {
 		Log.i("rkprkp", "login success");
-		// Intent i = new Intent(this, PhotosActivity.class);
+		 Intent i = new Intent(this, TimelineActivity.class);
 		// startActivity(i);
 	}
 
